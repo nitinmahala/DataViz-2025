@@ -82,14 +82,14 @@ export default function Page() {
       transition={{ duration: 0.5 }}
       className="mb-6 text-7xl font-extrabold text-transparent md:text-9xl bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
     >
-      Data Viz Challenge 2025
+      DATAVIZ Challenge 2025
     </motion.h1>
     
     <motion.p
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="mb-8 text-xl md:text-3xl text-gray-200"
+      className="mb-8 text-xl md:text-5xl text-gray-200"
     >
       Empowering Decisions through Data Visualization
     </motion.p>
@@ -507,7 +507,6 @@ export default function Page() {
 
 
 
-
 {/* FAQ Section */}
 <section
   className="relative py-20 text-white bg-[#0a0a0a] overflow-hidden before:absolute before:inset-0 before:bg-black/50 before:-z-10"
@@ -568,7 +567,7 @@ export default function Page() {
             value={`item-${index}`}
             className="rounded-lg border border-gray-700 bg-[#121212] shadow-md transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:border-violet-400"
           >
-            <AccordionTrigger className="p-4 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-pink-500 to-blue-500 transition-colors duration-300 ease-in-out hover:text-violet-400">
+            <AccordionTrigger className="p-4 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-pink-500 to-blue-500 transition-colors duration-300 ease-in-out hover:text-violet-400 text-left w-full">
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="p-4 text-white border-t border-gray-700">
@@ -588,7 +587,6 @@ export default function Page() {
   </div>
 </section>
 
-
 {/* Footer */}
 <footer className="relative py-12 bg-[#121212] text-gray-300">
   <div className="container px-4 mx-auto">
@@ -597,7 +595,7 @@ export default function Page() {
       <div>
         <h3 className="mb-4 text-lg font-bold text-white">About Trinity Club</h3>
         <p className="text-gray-400">
-          Trinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
+          TTrinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
         </p>
       </div>
 
