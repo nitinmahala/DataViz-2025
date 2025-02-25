@@ -33,7 +33,7 @@ export function NavBar() {
         {/* Register Button */}
         <div className="hidden md:block">
           <Button asChild className="text-lg font-medium px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 hover:shadow-glow">
-            <Link href="https://unstop.com/competitions/dataviz-2025-empowering-decisions-through-data-visualization-solutions-2k25-army-institute-of-technology-ai-1389578" target="_blank">
+            <Link href="https://unstop.com/o/dK5RFYM?utm_medium=Share&utm_source=shortUrl" target="_blank">
               Register Now
             </Link>
           </Button>
