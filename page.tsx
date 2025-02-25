@@ -320,7 +320,7 @@ export default function Page() {
 {/* How to Participate */}
 <section 
   className="relative py-20 text-white overflow-hidden bg-[#0a0a0a] before:absolute before:inset-0 before:bg-black/50 before:-z-10"
-  id="participate"
+  id="howtoparticipate"
 >
   {/* Unique Background Neon Glow Animation */}
   <div className="absolute inset-0 pointer-events-none">
