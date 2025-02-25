@@ -595,7 +595,7 @@ export default function Page() {
       <div>
         <h3 className="mb-4 text-lg font-bold text-white">About Trinity Club</h3>
         <p className="text-gray-400">
-          TTrinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
+          Trinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
         </p>
       </div>
 
