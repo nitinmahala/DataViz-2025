@@ -238,7 +238,6 @@ export default function Page() {
   </div>
 </section>
 
-
 {/* Timeline Section */}
 <section className="relative py-24 bg-[#0a0a0a] text-white overflow-hidden" id="timeline">
   {/* Background Neon Glow */}
@@ -258,54 +257,32 @@ export default function Page() {
         {/* Neon Timeline Line */}
         <div className="absolute w-px h-full -translate-x-1/2 left-1/2 bg-gradient-to-b from-blue-500 to-purple-500 shadow-lg shadow-blue-500/50" />
 
-        {[
-          {
-            date: "February 12, 2025",
-            title: "Registration Opens",
-            description: "Registrations start on Unstop",
-          },
-          {
-            date: "March 15, 2025",
-            title: "Registration Deadline",
-            description: "Last date to register on Unstop.",
-          },
-          {
-            date: "March 19, 2025",
-            title: "Submission Start",
-            description: "Start submiting your dashboards/projects",
-          },
-          {
-            date: "March 23, 2025",
-            title: "Submission Deadline",
-            description: "Final date to submit your dashboards/project.",
-          },
-          {
-            date: "March 31, 2025",
-            title: "Winners Announcement",
-            description: "Results will be declared after evaluation.",
-          },
+        {[ 
+          { date: "February 12, 2025", title: "Registration Opens", description: "Registrations start on Unstop" }, 
+          { date: "March 15, 2025", title: "Registration Deadline", description: "Last date to register on Unstop." }, 
+          { date: "March 19, 2025", title: "Submission Start", description: "Start submitting your dashboards/projects" }, 
+          { date: "March 23, 2025", title: "Submission Deadline", description: "Final date to submit your dashboards/project." }, 
+          { date: "March 31, 2025", title: "Winners Announcement", description: "Results will be declared after evaluation." }, 
         ].map((event, index) => (
           <div
             key={event.title}
-            className={`relative flex items-center gap-8 mb-16 transition-transform duration-500 ease-in-out ${
-              index % 2 === 0 ? "flex-row animate-floatLeft" : "flex-row-reverse animate-floatRight"
-            }`}
+            className={`relative flex items-center gap-8 mb-16 transition-transform duration-500 ease-in-out ${index % 2 === 0 ? "flex-row animate-floatLeft" : "flex-row-reverse animate-floatRight"}`}
           >
             {/* Glassmorphic Neon Event Card */}
-            <div className="w-1/2 text-right">
+            <div className="w-full sm:w-1/2 text-right">
               <div
                 className={`p-6 rounded-lg border border-gray-600 shadow-2xl backdrop-blur-xl bg-black/50 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 ${
                   index % 2 === 0 ? "mr-4" : "ml-4"
-                }`}
+                } overflow-hidden relative z-10`}
               >
-                <h3 className="text-2xl font-bold text-blue-400">{event.title}</h3>
-                <p className="text-sm text-gray-400">{event.date}</p>
-                <p className="mt-2 text-gray-300">{event.description}</p>
+                <h3 className="text-2xl sm:text-3xl font-bold text-blue-400">{event.title}</h3>
+                <p className="text-xs sm:text-sm text-gray-400">{event.date}</p>
+                <p className="mt-2 text-xs sm:text-sm text-gray-300">{event.description}</p>
               </div>
             </div>
 
-            {/* Steady Circle Marker */}
-            <div className="absolute w-6 h-6 -translate-x-1/2 left-1/2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg shadow-blue-500/50" />
+            {/* Steady Circle Marker at the Top */}
+            <div className="absolute w-6 h-6 -translate-x-1/2 left-1/2 top-0 transform -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg shadow-blue-500/50 z-20" />
 
             {/* Empty Space for Alignment */}
             <div className="w-1/2" />
@@ -315,6 +292,7 @@ export default function Page() {
     </div>
   </div>
 </section>
+
 
 
 {/* How to Participate */}
@@ -619,7 +597,7 @@ export default function Page() {
       <div>
         <h3 className="mb-4 text-lg font-bold text-white">About Trinity Club</h3>
         <p className="text-gray-400">
-          Trinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
+          TTrinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
         </p>
       </div>
 
