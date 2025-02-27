@@ -216,17 +216,28 @@ export default function Page() {
       </Card>
 
       {/* When? */}
-      <Card className="bg-black/70 border border-gray-600 shadow-lg">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-3 text-xl text-pink-300">
-            <Calendar className="w-7 h-7 text-pink-400" />
-            When?
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="text-gray-300 text-lg text-justify">
-          <strong>DataViz 2025</strong> will be held from 19th to 23rd March. Make sure to register by the <strong>15th of March</strong> to secure your spot and be part of this exciting event!
-        </CardContent>
-      </Card>
+<Card className="bg-black/70 border border-gray-600 shadow-lg">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-3 text-xl text-pink-300">
+      <Calendar className="w-7 h-7 text-pink-400" />
+      When?
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="text-gray-300 text-lg text-justify">
+    <strong>DataViz 2025</strong> will take place in two rounds:  
+    <ul className="list-disc list-inside mt-2">
+      <li>
+        <strong>Round 1 (Online):</strong> March 19 - March 23.  
+        Ensure you register by <strong>March 15</strong> to participate.
+      </li>
+      <li>
+        <strong>Final Round (On-Site):</strong> April 5 at <strong>AIT Pune</strong>.  
+        Shortlisted participants will compete in an on-spot challenge.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
     </div>
 
     {/* Additional Information */}
@@ -257,12 +268,14 @@ export default function Page() {
         {/* Neon Timeline Line */}
         <div className="absolute w-px h-full -translate-x-1/2 left-1/2 bg-gradient-to-b from-blue-500 to-purple-500 shadow-lg shadow-blue-500/50" />
 
-        {[ 
-          { date: "February 12, 2025", title: "Registration Opens", description: "Registrations start on Unstop" }, 
-          { date: "March 15, 2025", title: "Registration Deadline", description: "Last date to register on Unstop." }, 
-          { date: "March 19, 2025", title: "Submission Start", description: "Start submitting your dashboards/projects" }, 
-          { date: "March 23, 2025", title: "Submission Deadline", description: "Final date to submit your dashboards/project." }, 
-          { date: "March 31, 2025", title: "Winners Announcement", description: "Results will be declared after evaluation." }, 
+        {[
+          { date: "February 12, 2025", title: "Registration Opens", description: "Registrations start on Unstop." },
+          { date: "March 15, 2025", title: "Registration Deadline", description: "Last date to register on Unstop." },
+          { date: "March 19, 2025", title: "Submission Start", description: "Start submitting your dashboards/projects." },
+          { date: "March 23, 2025", title: "Submission Deadline", description: "Final date to submit your dashboards/projects." },
+          { date: "March 31, 2025", title: "Round 1 Results", description: "Top participants shortlisted for Round 2." },
+          { date: "April 5, 2025", title: "Final Round at AIT Pune", description: "On-spot challenge for shortlisted participants at Army Institute of Technology, Pune." }
+         
         ].map((event, index) => (
           <div
             key={event.title}
@@ -292,6 +305,7 @@ export default function Page() {
     </div>
   </div>
 </section>
+
 
 
 
@@ -524,7 +538,7 @@ export default function Page() {
           {
             question: "How do I register for the event?",
             answer:
-              "Registration for the event is done through the Unstop platform. Ensure you complete your registration before the deadline on March 15, 2025.",
+              "Registration is done through the Unstop platform. Make sure to complete your registration before March 15, 2025.",
           },
           {
             question: "What is the submission format?",
@@ -539,22 +553,22 @@ export default function Page() {
           {
             question: "Can I work in a team?",
             answer:
-              "No, this event requires solo participation only. Each participant must submit their own work.",
+              "No, this event requires solo participation. Each participant must submit their own work.",
           },
           {
-            question: "What is the event timeline?",
+            question: "When and where is the final round?",
             answer:
-              "Registrations open on February 12, 2025, and close on March 15, 2025. Submissions are accepted from March 19 to March 23, 2025. Winners will be announced on March 31, 2025.",
+              "The final round will be held on April 5, 2025, at AIT Pune. Shortlisted participants from Round 1 will compete in person.",
+          },
+          {
+            question: "What happens in Round 2?",
+            answer:
+              "Round 2 is an on-spot challenge at AIT Pune, where participants will be given a dataset and problem statement to create visualizations within a limited time.",
           },
           {
             question: "Is there a participation certificate?",
             answer:
               "Yes! All participants who successfully submit their projects will receive an official participation certificate.",
-          },
-          {
-            question: "Can I submit a self-collected dataset?",
-            answer:
-              "No, participants must use publicly available datasets. Self-collected datasets will not be accepted.",
           },
           {
             question: "What if I face issues during the competition?",
@@ -595,7 +609,7 @@ export default function Page() {
       <div>
         <h3 className="mb-4 text-lg font-bold text-white">About Trinity Club</h3>
         <p className="text-gray-400">
-          Trinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
+          TTrinity Club at AIT, Pune, empowers students in AI, ML, and Data Science through workshops, events, and hands-on projects, fostering growth and innovation.
         </p>
       </div>
 
