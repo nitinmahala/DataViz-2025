@@ -475,9 +475,8 @@ export default function Page() {
 
 
 
-
-{/* Evaluation Criteria */}
-<section className="relative py-20 bg-[#0a0a0a] text-white overflow-hidden" id="evaluation">
+{/* SPONSOR */}
+<section className="relative py-20 bg-[#0a0a0a] text-white overflow-hidden" id="sponsors">
   {/* Neon Background Glow */}
   <div className="absolute inset-0 pointer-events-none">
     <div className="absolute top-10 left-1/4 w-56 h-56 bg-blue-500 opacity-30 blur-[100px]"></div>
@@ -488,38 +487,36 @@ export default function Page() {
   {/* Content */}
   <div className="container px-4 mx-auto relative z-10">
     <h2 className="mb-12 text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-      Evaluation Criteria
+      Our Sponsors
     </h2>
-   
 
     <div className="grid max-w-5xl gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
       {[
-        { title: "Clarity", description: "Usability & interpretability of the dashboard", shadow: "hover:shadow-blue-500/50" },
-        { title: "Creativity", description: "Innovative & unique design elements", shadow: "hover:shadow-purple-500/50" },
-        { title: "Functionality", description: "Effective use of interactive features", shadow: "hover:shadow-pink-500/50" },
-        { title: "Data Storytelling", description: "Ability to communicate insights clearly", shadow: "hover:shadow-green-500/50" },
-        { title: "Aesthetics", description: "Professional layout & color scheme", shadow: "hover:shadow-orange-500/50" },
-        { title: "Accuracy", description: "Correctness of data representation", shadow: "hover:shadow-cyan-500/50" },
-        { title: "Bonus Points", description: "Well-explained video submission may increase scores", shadow: "hover:shadow-yellow-500/50" },
-      ].map((criterion) => (
+        { name: "UNSTOP", type: "Hosting Partner", image: "https://i.ibb.co/wFFT3zZJ/Group-2.png" },
+        { name: "PUNEKAR NEWS", type: "Digital Media Partner", image: "https://i.ibb.co/NnmyvR9g/Group-3.png" },
+        { name: "XYZ DOMAIN", type: "Domain Sponsor", image: "https://i.ibb.co/hxXqdFVY/Group-4.png" },
+        { name: "GIVE MY CERTIFICATE", type: "Certificate Partner", image: "https://i.ibb.co/B54NTCqN/Group-5.png" },
+        { name: "WORQHAT", type: "Technical Partner", image: "https://i.ibb.co/3yXxrKm6/Group-6.png" },
+        { name: "IGMAE", type: "Gifting Partner", image: "https://i.ibb.co/wF8ddKsv/Group-7.png" },
+        { name: "INTERVIEW BUDDY", type: "AI Mock Interview Partner", image: "https://i.ibb.co/zHJzBfvn/Group-8.png" },
+        { name: "QELICA", type: "Gifting Partner", image: "https://i.ibb.co/BH7628z1/Group-10.png" },
+        
+      ].map((sponsor, index) => (
         <Card
-          key={criterion.title}
-          className={`bg-black/70 border border-gray-600 shadow-none backdrop-blur-md transition-all duration-300 ease-in-out 
-            hover:scale-105 hover:shadow-lg hover:shadow-[10px_5px_20px_-5px] ${criterion.shadow}`}
+          key={index}
+          className="bg-black/70 border border-gray-600 shadow-none backdrop-blur-md transition-all duration-300 ease-in-out 
+            hover:scale-105 hover:shadow-lg hover:shadow-[10px_5px_20px_-5px] hover:shadow-blue-500/50"
         >
-          <CardHeader>
-            <CardTitle className="text-white">{criterion.title}</CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-300">{criterion.description}</CardContent>
+          <CardContent className="flex flex-col items-center justify-center p-6">
+            <img src={sponsor.image} alt={sponsor.name} className="w-full h-32 object-contain" />
+            <p className="mt-4 text-lg font-semibold text-white">{sponsor.name}</p>
+            <p className="text-sm text-gray-400">{sponsor.type}</p>
+          </CardContent>
         </Card>
       ))}
     </div>
   </div>
 </section>
-
-
-
-
 
 {/* FAQ Section */}
 <section
