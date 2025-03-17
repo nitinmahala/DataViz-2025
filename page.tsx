@@ -493,7 +493,7 @@ export default function Page() {
     <div className="grid max-w-5xl gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
       {[
         { name: "UNSTOP", type: "Hosting Partner", image: "https://i.ibb.co/wFFT3zZJ/Group-2.png" },
-        { name: "FYREGIG", type: "Technical Partner", image: "https://i.ibb.co/VcMTmDr9/Group-11.png" },
+        { name: "FYRE GIG", type: "Technical Partner", image: "https://i.ibb.co/VcMTmDr9/Group-11.png" },
         { name: "PUNEKAR NEWS", type: "Digital Media Partner", image: "https://i.ibb.co/NnmyvR9g/Group-3.png" },
         { name: "XYZ DOMAIN", type: "Domain Sponsor", image: "https://i.ibb.co/hxXqdFVY/Group-4.png" },
         { name: "GIVE MY CERTIFICATE", type: "Certificate Partner", image: "https://i.ibb.co/B54NTCqN/Group-5.png" },
