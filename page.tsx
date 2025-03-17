@@ -493,14 +493,14 @@ export default function Page() {
     <div className="grid max-w-5xl gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
       {[
         { name: "UNSTOP", type: "Hosting Partner", image: "https://i.ibb.co/wFFT3zZJ/Group-2.png" },
-        { name: "FYREGIG", type: "Gifting Partner", image: "https://i.ibb.co/VcMTmDr9/Group-11.png" },
+        { name: "FYREGIG", type: "Technical Partner", image: "https://i.ibb.co/VcMTmDr9/Group-11.png" },
         { name: "PUNEKAR NEWS", type: "Digital Media Partner", image: "https://i.ibb.co/NnmyvR9g/Group-3.png" },
         { name: "XYZ DOMAIN", type: "Domain Sponsor", image: "https://i.ibb.co/hxXqdFVY/Group-4.png" },
         { name: "GIVE MY CERTIFICATE", type: "Certificate Partner", image: "https://i.ibb.co/B54NTCqN/Group-5.png" },
         { name: "WORQHAT", type: "Technical Partner", image: "https://i.ibb.co/3yXxrKm6/Group-6.png" },
-        { name: "IGMAE", type: "Gifting Partner", image: "https://i.ibb.co/wF8ddKsv/Group-7.png" },
+        
         { name: "INTERVIEW BUDDY", type: "AI Mock Interview Partner", image: "https://i.ibb.co/zHJzBfvn/Group-8.png" },
-        { name: "QELICA", type: "Gifting Partner", image: "https://i.ibb.co/BH7628z1/Group-10.png" },
+        
         
       ].map((sponsor, index) => (
         <Card
